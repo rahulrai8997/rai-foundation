@@ -1,0 +1,238 @@
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: rgb(136, 139, 136)
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white
+  ;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(239, 245, 231);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgb(239, 247, 228);
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  
+}
+.img {
+    border: 3px solid;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="LOGO.jpg" width="200" height="150">
+  <h2>RAHUL RAI'S FOUNDATION</h2>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Officials</h2>
+      <h5>Dehradun, Jan 03, 2023</h5>
+      <img src="blog1.jpeg" style="width:1100px;" style="border: 5px solid;">
+      <p>Conference Hall NSTI-Dehradun..</p>
+      <h2><p>MSDE DGT-NSTI-Dehradun Official Magazine Team leads by Mr.RahulRai     </p></h2>
+      <p>Left Mrs.Himani(CSA), Mr.Bhupendra singh(CSA), Mr.Ashish Maurya(CSA), Mr.Ankit Sharma(ADIT-IBM)</p>
+      <b><p>Center Mr.Rahul Rai(ADIT-IBM) .</p></b>
+      <p>Right Mr.Anand Kumar, Mr.Divtesh Aggarwal, Mr.Shashi Yadav(SOLAR) .</p>
+    </div>
+    <div class="card">
+      <h2>Advance Diploma in information Technology, Networking & Cloud Computing (2022-24)
+      </h2>
+      <h5>NSTI-Dehradun, Nov 11, 2022</h5>
+      <img src="ADIT-IBM.jpeg" style="width:1000px;">
+      <p>Batch2022-2024</p>
+      <p> Swati Gulati(Trainer) , Trainees-Rahul Rai ,Bhagwan Singh, Sanju Kumar, Prabhash Kumar, Aman Kumar, Pravesh Kumar, Sanjay Sonkariya, Kunjesh Yadav, Gulshan Kumar Ray, Maneesh sharma, Shivam Shukla,Ramakant,Seema ,Aprajita,Kavita,Maneesha  </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="Rahul rai Display picture.jpg" style="length:300px;width:200px">
+      <p>Rahul Rai</p>
+      <p>ADIT-IBM Dehradun</p>
+      <p>Crafts Instructor Training Scheme-Chennai</p>
+      <p>Craftsmen Training Scheme</p>
+      <p>Diploma In Engineering-Kanpur</p>
+    </div>
+    <div class="card">
+      <h3> TEAM</h3>
+      <img src="rrr.jpeg" style="length:150px;width:100px">
+      <p>Rahul Rai (Founder)</p>
+      <img src="ankit.jpeg" style="length:150px;width:100px">
+      <p>Ankit Sharma (EO)</p>
+      <img src="bsgrewal.png" style="length:150px;width:100px">
+      <p>BS Grewal (AMD)</p>
+    </div>
+    <div class="card">
+      <img src="linkedin.jpg" width="80" height="80"><p><a href="https://www.linkedin.com/in/rahulraidgt/">Follow me linkedin.com</a></p>
+      <img src="twitter.jpg" width="80" height="80"> <p><a href="https://twitter.com/rahulrai8997">Follow me twitter.com</a></p>
+      <img src="github.jpg" width="80" height="80"><p><a href="https://github.com/rahulrai8997">Catch my creations github.com</a></p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.730786058011!2d78.01117281505856!3d30.301724813327574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092a2e966fe125%3A0x93353bda68fc0406!2sNSTI%20(National%20Skill%20Training%20Institute)%20Dehradun!5e0!3m2!1sen!2sin!4v1672746154638!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <button class="open-button" onclick="openForm()">Chat with Rahul Rai</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>CHAT WITH RAHUL RAI</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+  </div>
+</div>
+<div class="footer">
+    <img src="LOGO.jpg" width="200" height="150">
+  <h2>© Rahul Rai's FOUNDATION ©</h2>
+</div>
+
+</body>
+</html>
